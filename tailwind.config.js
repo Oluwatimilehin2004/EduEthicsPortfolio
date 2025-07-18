@@ -2,7 +2,7 @@
 module.exports = {
   content: [
   './*.html',  // Scans all HTML files in root
-  './**/*.js'  // Scans JS files in all subfolders (if needed)
+  './*.js'  // Scans JS files in all subfolders (if needed)
   ],
   theme: {
     extend: {
