@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "build": "npx postcss input.css -o output.css",
-    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+    "build": "postcss input.css -o output.css",
+    "watch": "tailwindcss -i input.css -o output.css --watch"
   },
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
