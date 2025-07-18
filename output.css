@@ -2035,6 +2035,20 @@ button,
       0.5rem;
 }
 
+.my-5{
+  margin-top:
+      1.25rem;
+  margin-bottom:
+      1.25rem;
+}
+
+.my-3{
+  margin-top:
+      0.75rem;
+  margin-bottom:
+      0.75rem;
+}
+
 .mb-10{
   margin-bottom:
       2.5rem;
@@ -2312,6 +2326,11 @@ button,
       2rem;
 }
 
+.gap-5{
+  gap:
+      1.25rem;
+}
+
 .space-x-3 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse:
       0;
@@ -2581,19 +2600,14 @@ button,
       url('./assets/13.jpg');
 }
 
-.bg-\[url\(\'\.\/assets\/15\.jpg\'\)\]{
-  background-image:
-      url('./assets/15.jpg');
-}
-
 .bg-\[url\(\'\.\/assets\/16\.jpg\'\)\]{
   background-image:
       url('./assets/16.jpg');
 }
 
-.bg-\[url\(\'\.\/assets\/17\.jpg\'\)\]{
+.bg-\[url\(\'\.\/assets\/19\.jpg\'\)\]{
   background-image:
-      url('./assets/17.jpg');
+      url('./assets/19.jpg');
 }
 
 .bg-\[url\(\'\.\/assets\/20\.jpg\'\)\]{
@@ -2611,19 +2625,14 @@ button,
       url('./assets/23.jpg');
 }
 
-.bg-\[url\(\'\.\/assets\/26\.jpg\'\)\]{
-  background-image:
-      url('./assets/26.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/28\.jpg\'\)\]{
-  background-image:
-      url('./assets/28.jpg');
-}
-
 .bg-\[url\(\'\.\/assets\/29\.JPG\'\)\]{
   background-image:
       url('./assets/29.JPG');
+}
+
+.bg-\[url\(\'\.\/assets\/Carla\.jpg\'\)\]{
+  background-image:
+      url('./assets/Carla.jpg');
 }
 
 .bg-\[url\(\'\.\/assets\/IMG_5456\.jpg\'\)\]{
@@ -2644,6 +2653,11 @@ button,
 .bg-\[url\(\'\.\/assets\/IMG_7267\.jpg\'\)\]{
   background-image:
       url('./assets/IMG_7267.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/Naomie\.jpg\'\)\]{
+  background-image:
+      url('./assets/Naomie.jpg');
 }
 
 .bg-\[url\(\'\.\/assets\/eight\.JPG\'\)\]{
@@ -2676,6 +2690,16 @@ button,
       url('./assets/one.HEIC');
 }
 
+.bg-\[url\(\'\.\/assets\/papa\.jpg\'\)\]{
+  background-image:
+      url('./assets/papa.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/sano\.jpg\'\)\]{
+  background-image:
+      url('./assets/sano.jpg');
+}
+
 .bg-\[url\(\'\.\/assets\/seven\.HEIC\'\)\]{
   background-image:
       url('./assets/seven.HEIC');
@@ -2696,94 +2720,9 @@ button,
       url('./assets/three.JPG');
 }
 
-.bg-\[url\(\'\.\/assets\/tweleve\.jpg\'\)\]{
-  background-image:
-      url('./assets/tweleve.jpg');
-}
-
 .bg-\[url\(\'\.\/assets\/two\.HEIC\'\)\]{
   background-image:
       url('./assets/two.HEIC');
-}
-
-.bg-\[url\(\'\.\/assets\/\'\)\]{
-  background-image:
-      url('./assets/');
-}
-
-.bg-\[url\(\'\.\/assets\/ni\'\)\]{
-  background-image:
-      url('./assets/ni');
-}
-
-.bg-\[url\(\'\.\/assets\/nine\.j\'\)\]{
-  background-image:
-      url('./assets/nine.j');
-}
-
-.bg-\[url\(\'\.\/assets\/19\.jpg\'\)\]{
-  background-image:
-      url('./assets/19.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/30\.jpg\'\)\]{
-  background-image:
-      url('./assets/30.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/\.jpg\'\)\]{
-  background-image:
-      url('./assets/.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/IMG_\.jpg\'\)\]{
-  background-image:
-      url('./assets/IMG_.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/IMG_65\.jpg\'\)\]{
-  background-image:
-      url('./assets/IMG_65.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/IMG_6527\.jpg\'\)\]{
-  background-image:
-      url('./assets/IMG_6527.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/IMG_73\.jpg\'\)\]{
-  background-image:
-      url('./assets/IMG_73.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/IMG_7327\.jpg\'\)\]{
-  background-image:
-      url('./assets/IMG_7327.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/SANO\.jpg\'\)\]{
-  background-image:
-      url('./assets/SANO.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/sano\.jpg\'\)\]{
-  background-image:
-      url('./assets/sano.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/Carla\.jpg\'\)\]{
-  background-image:
-      url('./assets/Carla.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/Naomie\.jpg\'\)\]{
-  background-image:
-      url('./assets/Naomie.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/papa\.jpg\'\)\]{
-  background-image:
-      url('./assets/papa.jpg');
 }
 
 .bg-cover{
@@ -2841,6 +2780,16 @@ button,
 .p-6{
   padding:
       1.5rem;
+}
+
+.p-3{
+  padding:
+      0.75rem;
+}
+
+.p-2{
+  padding:
+      0.5rem;
 }
 
 .px-1{
@@ -3449,6 +3398,16 @@ button,
 }
 
 @media (min-width: 640px){
+  .sm\:h-\[2150vh\]{
+    height:
+      2150vh;
+  }
+
+  .sm\:h-\[150vh\]{
+    height:
+      150vh;
+  }
+
   .sm\:max-w-sm{
     max-width:
       24rem;
@@ -3498,6 +3457,13 @@ button,
 
   .lg\:m-0{
     margin:
+      0px;
+  }
+
+  .lg\:my-0{
+    margin-top:
+      0px;
+    margin-bottom:
       0px;
   }
 
@@ -3556,6 +3522,11 @@ button,
       space-between;
   }
 
+  .lg\:gap-14{
+    gap:
+      3.5rem;
+  }
+
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse:
       0;
@@ -3565,11 +3536,28 @@ button,
       calc(0px * var(--tw-space-y-reverse));
   }
 
+  .lg\:p-20{
+    padding:
+      5rem;
+  }
+
+  .lg\:p-5{
+    padding:
+      1.25rem;
+  }
+
   .lg\:py-0{
     padding-top:
       0px;
     padding-bottom:
       0px;
+  }
+
+  .lg\:py-14{
+    padding-top:
+      3.5rem;
+    padding-bottom:
+      3.5rem;
   }
 
   .lg\:pl-20{
@@ -3620,5 +3608,10 @@ button,
   .lg\:text-\[30px\]{
     font-size:
       30px;
+  }
+
+  .lg\:text-\[22px\]{
+    font-size:
+      22px;
   }
 }
