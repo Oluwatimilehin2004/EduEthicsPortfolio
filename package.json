@@ -1,7 +1,6 @@
 {
   "scripts": {
     "build": "npx postcss input.css -o output.css",
-    "prebuild": "chmod +x node_modules/.bin/*",
     "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
   },
   "dependencies": {
