@@ -2,13 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build"
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "output.css",
+      "use": "@vercel/static"
     }
   ],
-  "build": {
-    "env": {
-      "NODE_VERSION": "18.x"
+  "routes": [
+    {
+      "src": "/(.*)", 
+      "dest": "/index.html"
     }
-  }
+  ]
 }
