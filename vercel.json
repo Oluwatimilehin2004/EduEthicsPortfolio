@@ -2,17 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
+      "src": "output.css",
       "use": "@vercel/static"
     },
     {
-      "src": "output.css",
+      "src": "index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)", 
+      "src": "/output.css",
+      "dest": "/output.css",
+      "headers": { "Cache-Control": "public, max-age=31536000" }
+    },
+    {
+      "src": "/(.*)",
       "dest": "/index.html"
     }
   ]
