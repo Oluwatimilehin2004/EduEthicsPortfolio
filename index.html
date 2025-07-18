@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/ethics.png" type="image/png" sizes="32x32">
+  <title>EduEthics</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-backgroundColor font-[Montserrat] relative snap-y snap-mandatory overflow-scroll scroll-smooth">
+  <!-- Desktop Screen -->
+  <nav class="w-full border-black h-[10%] lg:flex justify-between hidden py-6 px-28">
+    <div class="text-[12px] space-x-4">
+      <a href="./index.html">Home</a>
+      <a href="./ElabChallenges.html">Elab-Challenges</a>
+    </div>
+    <div class="text-[20px] font-semibold cursor-wait">
+      <h1>EduEthics</h1>
+    </div>
+    <div class="text-[12px] space-x-4">
+      <a href="./prototype.html">Prototype</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="#video"><button class="py-2 px-3 bg-buttonDeepBlack text-white hover:bg-bgBlue hover:transition-transform hover:scale-105 rounded-lg">Contact Us</button></a>
+    </div>
+  </nav>
+  
+  <!-- Mobile Screen -->
+   <nav class="w-full h-[20%] flex p-4 justify-between lg:hidden">
+      <h1 class="text-[14px]">EduEthics</h1>
+      <button id="openMenu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+      </button>
+      
+    <div id="menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-backgroundColor p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="font-semibold text-lg">EduEthics</span>
+          </a>
+          <button id="closeBar" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">ELAB</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prototype</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </nav>
+
+   <!-- Hero Section -->
+   <section class="max-w-6xl mx-auto px-4 pt-16 text-center">
+    <!-- Headline -->
+    <h1 class="text-3xl sm:text-4xl font-normal line-through decoration-mainGreen">Sex-For-Grades</h1>
+    <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mt-2">Stop Sexual Harassement In Schools</h2>
+    <p class="text-gray-600 mt-4">By repoting cases of sexual Harrasement through EduEthics, <br />you get fast and effective responses/solutions</p>
+
+    <!-- CTA Button -->
+    <div class="mt-6">
+      <a href="#" class="inline-block text-12px bg-black text-white px-6 py-2 rounded-full hover:bg-bgBlue hover:scale-105 transition">
+        Report Now!!!
+      </a>
+    </div>
+  </section>
+
+  <!-- Team Images Row with Curved Effect -->
+  <div class="w-full flex justify-center gap-4 h-96 items-center absolute top-[85%]">
+    <div class="w-44 h-[90%] rounded-md clip-path-trapezoid">
+      <img src="./assets/Stop gender violence concept _ Free Vector.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[80%] rounded-md clip-path-trapezoid">
+      <img src="./assets/Why we need to talk about talking to women _ shots Magazine.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[70%] rounded-md clip-path-trapezoid">
+      <img src="./assets/16 Ways I Never Expected Anxiety To Impact My Life.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[60%] rounded-md clip-path-trapezoid">
+      <img src="./assets/e4f7a3ef-08e1-4c2d-a107-5ddc9fdb1b8b.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[55%] rounded-md">
+      <img src="./assets/girl power.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[55%] rounded-md">
+      <img src="./assets/Not made by me.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[60%] rounded-md clip-path-trapezoid1">
+      <img src="./assets/download (2).jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[70%] rounded-lg clip-path-trapezoid1">
+      <img src="./assets/Illustrated woman with megaphone screaming _ Free Vector.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[80%] rounded-lg clip-path-trapezoid1">
+      <img src="./assets/Gender violence concept _ Free Vector.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+    <div class="w-44 h-[90%] rounded-lg clip-path-trapezoid1">
+      <img src="./assets/Redirect Notice.jpg" alt="Person" class="w-full h-full object-cover rounded-md" />
+    </div>
+  </div>
+  <!-- Feature Sections -->
+    <div class="hidden mt-16 lg:grid md:grid-cols-3 gap-8 text-left text-gray-700 max-w-5xl m-auto absolute top-[167%] right-[16%]">
+      <!-- Feature 1 -->
+      <div>
+        <h3 class="text-[14px] mb-2 font-semibold">Sexual Harassement</h3>
+        <p class="text-[12px]">
+          Sexual harassment remains a silent epidemic across Nigerian universities, where countless students, mostly women: are coerced, intimidated, or abused by those in power. Fear of backlash, social stigma, and institutional neglect keep victims quiet while perpetrators continue unchecked, deepening a culture of silence and impunity
+        </p>
+      </div> 
+
+      <!-- Feature 2 -->
+      <div class="px-5 border-x-2 border-mainGreen">
+        <h3 class="text-[14px] mb-2 font-semibold">Women Empowerment</h3>
+        <p class="text-[12px]">
+          Sex-for-grade scandals severely hinder women’s empowerment, robbing female students of the confidence, fairness, and opportunities they deserve. Instead of being rewarded for merit, many are pressured into silence or submission, creating emotional scars that outlast school and limit their professional growth and leadership potential.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div>
+        <h3 class="text-[14px] mb-2 font-semibold">Weak Reporting System</h3>
+        <p class="text-[12px]">
+          Most Nigerian universities lack safe, reliable channels for students to report abuse. Victims often face broken processes, delayed responses, or outright cover-ups. Without transparent systems in place, trust is lost, data is hidden, and justice becomes a privilege, rather than a right, for the few who speak up.
+        </p>
+      </div>
+    </div> 
+
+    <!-- Our Values -->
+      <section class="w-full pt-10 flex flex-col items-center absolute top-[190%] lg:top-[240%]">
+
+        <section class="w-[100%] h-[600px] mb-4 flex flex-col justify-center items-center space-y-4">
+          <header>
+            <h1 class="text-[25px] lg:text-[30px] font-bold text-center">The Team</h1>
+            <p class="text-[12px] lg:text-[14px] py-4 text-center">We are the changemakers, We advocate change.</p>
+          </header>
+
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="./assets/papa.HEIC" alt="Papa" />
+              <div class="overlay">
+                <img class="flag" src="https://flagcdn.com/w80/ng.png" alt="Nigeria Flag" />
+                <span>Ojudun Ayomide</span>
+                <span>TEAM LEAD</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/bol.HEIC" alt="Bol" />
+              <div class="overlay">
+                <img class="flag" src="https://flagcdn.com/w80/ss.png" alt="South-Sudan Flag" />
+                <span>Dau Bol</span>
+                <span>RESEARCHER</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/Naomie.HEIC" alt="Naomie" />
+              <div class="overlay">
+                <img class="flag" src="https://flagcdn.com/w80/rw.png" alt="Rwanda Flag" />
+                <span>Naomie Mukesekuru</span>
+                <span>Socials Manager</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/Carla.HEIC" alt="Carla" />
+              <div class="overlay">
+                <img class="flag" src="https://flagcdn.com/w80/rw.png" alt="Rwanda Flag" />
+                <span>Kaitare Carla</span>
+                <span>The Team's Voice</span>
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img src="./assets/sano.HEIC" alt="Sano" />
+              <div class="overlay">
+                <img class="flag" src="https://flagcdn.com/w80/rw.png" alt="Rwanda Flag" />
+                <span>Sano Rodrigue</span>
+                <span>UI/UX Designer</span>
+              </div>
+            </div>
+
+            <!-- <div class="gallery-item">
+              <img src="images/Sabrina.jpg" alt="Rwanda" />
+              <div class="overlay">
+                <img class="flag" src="https://flagcdn.com/w80/rw.png" alt="Rwanda Flag" />
+                <span>Sabrina Kaliza</span>
+              </div>
+            </div> -->
+          </div>
+        </section>
+
+        <h1 id="title" class="text-[25px] lg:text-[30px] font-bold text-center mb-10">Our Values</h1>
+        <div class="w-auto bg-black py-1 px-1 space-x-6 flex rounded-full mb-10">
+          <h3 id="values" class="text-[12px] lg:text-[14px] py-2.5 px-4 text-white cursor-pointer bg-lightBlue rounded-full">Team Values</h3>
+          <h3 id="problem" class="text-[12px] lg:text-[14px] py-2.5 px-4 text-white cursor-pointer">Problem</h3>
+          <h3 id="mission" class="text-[12px] lg:text-[14px] py-2.5 px-4 text-white cursor-pointer">Mission</h3>
+        </div>
+        <div id="dash">
+          <div class="w-full space-y-3 lg:space-y-0 flex justify-center flex-wrap space-x-3 mt-2 mb-20">
+            <div class="w-full lg:w-[32%] rounded-lg border-mainGreen border-2 space-y-7 p-10 flex flex-col items-center justify-center shadow-md">
+              <img src="./assets/accountability.png" alt="accountability" width="100">
+              <h2 class="text-[20px] lg:text-[25px] font-bold">Accountability</h2>
+              <p class="text-[12px] lg:text-[14px] text-center">At EduEthics, we hold ourselves responsible for every action we take as a team. From following up on reported cases to documenting our processes with transparency, accountability is the foundation of how we build trust, both within our team and with every user we serve.</p>
+            </div>
+            <div class="w-full lg:w-[32%] rounded-lg border-mainGreen border-2 space-y-7 p-10 flex flex-col items-center justify-center shadow-md">
+              <img src="./assets/womens-power.png" alt="collaboration" width="100">
+              <h2 class="text-[20px] lg:text-[25px] font-bold">Collaboration</h2>
+              <p class="text-[12px] lg:text-[14px] text-center">We believe in creating systems that give people a voice. Whether it's designing user-friendly reporting tools or providing helpful resources, we focus on empowering students and institutions to take bold steps toward justice, healing, and long-lasting cultural change.</p>
+            </div>
+            <div class="w-full lg:w-[32%] rounded-lg border-mainGreen border-2 space-y-7 p-10 flex flex-col items-center justify-center shadow-md">
+              <img src="./assets/collaboration.png" alt="Empowerment" width="100">
+              <h2 class="text-[20px] lg:text-[25px] font-bold">Empowerment</h2>
+              <p class="text-[12px] lg:text-[14px] text-center">Collaboration fuels every milestone we achieve. We actively listen to diverse perspectives, delegate tasks based on strengths, and work together to refine EduEthics into a solution that serves real people. Every line of code, idea, or feature is shaped by shared vision</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem -->
+        <!-- <section class="w-full border-2 flex lg:justify-center items-center p-5 flex-col lg:flex-row font-[Montserrat] space-x-4">
+          <div class="w-full flex flex-col text-start justify-center pl-20">
+            <h2 class="text-[20px] lg:text-[25px] font-bold pb-5">Problems</h2>
+            <p class="text-[12px] lg:text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit similique cumque asperiores, porro eos qui quas enim provident aperiam libero, commodi dolorem optio ex consequuntur sed sint ea laborum.</p>
+          </div>
+          <div class="w-full rounded-lg lg:flex lg:justify-center"> 
+            <img src="./assets/Premium Vector _ Sexual harassment banner.jpg" alt="problem" width="400" class="rounded-lg border-4 border-mainGreen">
+          </div>
+        </section> -->
+
+        <!-- Mission -->
+        <!-- <section class="w-full border-2 flex lg:justify-center items-center p-5 flex-col lg:flex-row font-[Montserrat] space-x-4">
+          <div class="w-full flex flex-col text-start justify-center pl-20">
+            <h2 class="text-[20px] lg:text-[25px] font-bold pb-5">Mission</h2>
+            <p class="text-[12px] lg:text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit similique cumque asperiores, porro eos qui quas enim provident aperiam libero, commodi dolorem optio ex consequuntur sed sint ea laborum.</p>
+          </div>
+          <div class="w-full rounded-lg lg:flex lg:justify-center"> 
+            <img src="./assets/Group Of Raised Arms Of Multicultural Women And Girls People Holding Letters In Hand Forming The Text  Empowerment  Encouragement And Success Motivation Self Empowerment Concept, Progress, Performance, Act PNG and .jpg" alt="mission" width="400" class="rounded-lg border-4 border-mainGreen">
+          </div>
+        </section>  -->
+
+        <!-- Contact Us -->
+          <section id="video" class="w-full flex flex-col lg:flex-row lg:justify-center p-20 space-x-5 bg-stopGenderViolenceSkin">
+            <div class="w-full lg:w-[40%] p-5">
+              <h3 class="text-[18px] lg:text-[20px] font-bold">Contact Us</h3>
+              <p class="text-[11px] lg:text-[13px]">We would love to hear from you, please fill out the form, we'll will response ASAP!</p>
+              <div class="w-full space-y-8 py-4">
+                <div class="w-full flex space-x-5">
+                  <div class="max-w-[50%] space-y-2">
+                    <h4 class="text-[16px] lg:text-[18px] font-semibold">Email</h4>
+                    <p class="text-[11px] lg:text-[13px]">Contact us by email and we will response shortly.</p>
+                    <h5 class="text-[12px] lg:text-[14px] font-medium">eduethics01@gmail.com</h5>
+                  </div>
+                  <div class="max-w-[50%] space-y-2">
+                    <h4 class="text-[16px] lg:text-[18px] font-semibold">Phone</h4>
+                    <p class="text-[11px] lg:text-[13px]">Call us on weekdays 9AM to 5PM.</p>
+                    <h5 class="text-[12px] lg:text-[14px] font-medium">+2347051147074</h5>
+                  </div>
+                </div>
+                <div class="border-bgBlue flex space-x-5">
+                  <div class="max-w-[50%] space-y-2 pr-2">
+                    <h4 class="text-[16px] lg:text-[18px] font-semibold">Mobile</h4>
+                    <p class="text-[11px] lg:text-[13px]">Call us on weekdays 9AM to 5PM.</p>
+                    <h5 class="text-[12px] lg:text-[14px] font-medium">+25079641532</h5>
+                  </div>
+                  <div class="max-w-[50%] space-y-2">
+                    <h4 class="text-[16px] lg:text-[18px] font-semibold">Location</h4>
+                    <p class="text-[11px] lg:text-[13px]">Visit us at our headquaters.</p>
+                    <h5 class="text-[12px] lg:text-[14px] font-medium">Bumbogo, Kigali Innovation City, <br/> Next to Azam, Kigali, <br/> Rwanda</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="w-full lg:w-[40%] p-5 bg-stopGenderViolenceWoman text-white text-[12px] lg:text-[14px] rounded-md space-y-4">
+              <h2 class="text-[20px] lg:text-[25px] font-bold pb-5">Write A Message</h2>
+              <div class="flex space-x-3">
+                <div class="text-[12px] lg:text-[14px]">
+                  <label for="" required>First Name: </label>
+                  <input type="text" placeholder="Enter First Name" class="my-2 text-black text-[11px] lg:text-[13px] placeholder:text-[10px] placholder:lg:text-[12px] font-light py-2 px-3 rounded-md bg-white">
+                </div>
+                <div class="text-[12px] lg:text-[14px]">
+                  <label for="" required>Last Name: </label>
+                  <input type="text" placeholder="Enter Last Name" class="my-2 text-black text-[11px] lg:text-[13px] placeholder:text-[10px] placholder:lg:text-[12px] font-light py-2 px-3 rounded-md bg-white">
+                </div>
+              </div>
+              <div class="text-[12px] lg:text-[14px] flex flex-col gap-2">
+                <label for="" required>Email: </label>
+                <input type="text" placeholder="Enter Email" class="text-black text-[11px] lg:text-[13px] placeholder:text-[10px] placholder:lg:text-[12px] font-light py-2 px-3 rounded-md bg-white">
+              </div>
+              <div class="text-[12px] lg:text-[14px] flex flex-col gap-2">
+                <label for="" required>Message: </label>
+                <textarea name="" placeholder="Enter Message" class="text-black text-[11px] lg:text-[13px] placeholder:text-[10px] placholder:lg:text-[12px] font-light py-2 px-3 rounded-md bg-white"></textarea>
+              </div>
+              <button class="py-2 px-4 bg-black hover:bg-stopGenderViolenceSkin cursor-pointer hover:transition-transform hover:scale-105 rounded-md">Send A Message</button>
+            </form>
+          </section>
+
+          <!-- Footer -->
+          <footer class="w-full bg-footerBlack text-white p-10 lg:flex hidden flex-col items-center justify-center space-y-3">
+            <div class="w-full flex justify-between py-5 px-28">
+              <div class="text-[12px] space-x-4">
+                <a href="./index.html">Home</a>
+                <a href="./ElabChallenges.html">Elab-Challenges</a>
+              </div>
+              <div class="text-[20px] font-semibold cursor-wait">
+                <a href="./index.html"><h1>EduEthics</h1></a>
+              </div>
+              <div class="text-[12px] space-x-4">
+                <a href="./prototype.html">Prototype</a>
+                <a href="./gallery.html">Gallery</a>
+              </div>
+            </div>
+            <div class="w-1/2 space-y-3 flex flex-col justify-center items-center">
+              <div class="flex space-x-4 pl-5 justify-center items-center">
+                <a href=""><img class="w-8 h-8" src="./assets/video.png" alt="youtube"></a>
+                <a href=""><img class="w-8 h-8" src="./assets/instagram.png" alt="instagram"></a>
+              </div>
+              <div class="flex space-x-4 text-[10px]">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Lincense Agreement</a>
+                <a href="#">Charging</a>
+              </div>
+            </div>
+            <h3 class="text-[11px]">@ 2025 Copyright</h3>
+          </footer>
+      </section>
+
+<script src="./script.js"></script>
+<script>
+  const items = document.querySelectorAll('.gallery-item');
+  let current = 0;
+  const cycleTime = 2000; // 2 seconds
+
+  function cycleActive() {
+    items.forEach(item => item.classList.remove('active'));
+    items[current].classList.add('active');
+    current = (current + 1) % items.length;
+  }
+
+  cycleActive();
+  setInterval(cycleActive, cycleTime);
+</script>
+</body>
+</html>

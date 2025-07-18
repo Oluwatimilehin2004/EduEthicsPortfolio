@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduEthics</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" href="./assets/ethics.png" class="bg-white rounded-sm" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-backgroundColor font-[Montserrat] relative snap-y snap-mandatory overflow-scroll">
+  <!-- Desktop Screen -->
+  <nav class="w-full border-black h-[10%] lg:flex justify-between hidden py-6 px-28">
+    <div class="text-[12px] space-x-4">
+      <a href="./index.html">Home</a>
+      <a href="./ElabChallenges.html">Elab-Challenges</a>
+    </div>
+    <div class="text-[20px] font-semibold cursor-wait">
+      <h1>EduEthics</h1>
+    </div>
+    <div class="text-[12px] space-x-4">
+      <a href="./prototype.html">Prototype</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="#video"><button class="py-2 px-3 bg-buttonDeepBlack text-white hover:bg-bgBlue hover:transition-transform hover:scale-105 rounded-lg">Contact Us</button></a>
+    </div>
+  </nav>
+  
+  <!-- Mobile Screen -->
+   <nav class="w-full h-[20%] flex p-4 justify-between lg:hidden">
+      <h1 class="text-[14px]">EduEthics</h1>
+      <button id="openMenu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+      </button>
+      
+    <div id="menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-backgroundColor p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="font-semibold text-lg">EduEthics</span>
+          </a>
+          <button id="closeBar" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">ELAB</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prototype</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </nav>
+
+   <aside class="w-full py-14 text-center flex flex-col justify-center items-center">
+        <h1 class="text-[23px] lg:text-[27px] font-bold text-center pb-4">EduEthics: Prototype Showcase – <br /> Do You Want to Be Heard?</h1>
+        <p class="text-[12px] lg:text-[14px] text-center w-[50%] text-slate-700">Expose the truth and report unethical academic practices through our secure, student-centered platform—built to give every voice power, not silence.</p>
+        <p class="text-[12px] lg:text-[14px] text-center w-[50%] text-slate-700 font-bold pt-4">WE PROMISE NOT TO GIVE YOU EMPTY PROMISE</p>
+   </aside>
+   <section class="w-full flex flex-col">
+        <div class="w-full flex flex-col-reverse lg:flex-row space-y-10 lg:space-y-0 lg:justify-center items-center py-14 bg-lightBlue">
+            <div class="w-full lg:w-[35%] flex justify-center">
+                <img src="./assets/iPhone_14___15_Pro_Max_-_1__2_-removebg-preview.png" alt="prototypeMobile">
+            </div>
+            <div class="w-full lg:w-[35%] text-start text-white">
+                <p class="text-[15px] lg:text-[18px] font-semibold">Secure, Responsive, and Student-focused, EduEthics is the Accountability Tool Every Campus Needs.</p>
+                <p class="text-[12px] lg:text-[14px] py-5">A reporting solution designed to meet your safety and justice needs. With a clean interface and secure architecture, EduEthics empowers students to report sexual harassment and unethical academic practice, anonymously or no, while connecting directly with trusted agencies for swift action.</p>
+            </div>
+        </div>
+        <div class="w-full flex flex-col space-y-10 lg:space-y-0 lg:justify-center items-center py-14 bg-lime-100">
+            <!-- Product 1 -->
+            <div class="flex border-b border-footerBlack justify-center items-center w-full lg:w-[70%] py-20">
+                <div class="w-full lg:w-[35%] flex justify-center">
+                    <img src="./assets/Desktop_4_mockup-removebg-preview.png" alt="prototypeMobile">
+                </div>
+                <div class="w-full lg:w-[35%] text-start text-footerBlack">
+                    <p class="text-[12px] lg:text-[14px] py-5">Our Anonymous Reporting feature is a safe digital space where victims and witnesses can <br> <span class="text-[15px] lg:text-[18px] font-semibold">Report Abuse Confidentially.</span> </p>
+                    <p class="text-[12px] lg:text-[14px] py-5">Built with privacy-first technology, it ensures your voice is heard, without ever putting your identity at risk.</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="flex border-b border-footerBlack justify-center items-center w-full lg:w-[70%] py-20">
+                <div class="w-full lg:w-[35%] text-start text-footerBlack">
+                    <p class="text-[12px] lg:text-[14px] py-5">Our Education Hub empowers users with bite-sized content, real-life stories, and actionable <br> <span class="text-[15px] lg:text-[18px] font-semibold">Lessons on Consent, Abuse, and Rights.</span> </p>
+                    <p class="text-[12px] lg:text-[14px] py-5">Designed to shift mindsets, it lays the foundation for a culture of respect and accountability in every school and institution.</p>
+                </div>
+                <div class="w-full lg:w-[35%] flex justify-center">
+                    <img src="./assets/2-removebg-preview.png" alt="prototypeMobile">
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="flex border-b border-footerBlack justify-center items-center w-full lg:w-[70%] py-20">
+                <div class="w-full lg:w-[35%] flex justify-center">
+                    <img src="./assets/Desktop_-_4__2___1_-removebg-preview.png" alt="prototypeMobile">
+                </div>
+                <div class="w-full lg:w-[35%] text-start text-footerBlack">
+                    <p class="text-[12px] lg:text-[14px] py-5">The Resource Center brings together helplines, therapy services, legal aid, and <br> <span class="text-[15px] lg:text-[18px] font-semibold">Survivor Networks at your Fingertips.</span> </p>
+                    <p class="text-[12px] lg:text-[14px] py-5">Whether you need help now or are just looking for guidance, we make sure you’re never walking alone.</p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="flex border-b border-footerBlack justify-center items-center w-full lg:w-[70%] py-20">
+                <div class="w-full lg:w-[35%] text-start text-footerBlack">
+                    <p class="text-[12px] lg:text-[14px] py-5">Our Case Tracker lets you follow up on your report in real-time, offering updates, timelines, and next steps.<br> <span class="text-[15px] lg:text-[18px] font-semibold">Clarity Every Step of the Way</span> </p>
+                    <p class="text-[12px] lg:text-[14px] py-5">With just your case ID, you stay informed; from submission to resolution, with complete transparency.
+
+</p>
+                </div>
+                <div class="w-full lg:w-[35%] flex justify-center">
+                    <img src="./assets/b5-removebg-preview.png" alt="prototypeMobile">
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="flex border-b border-footerBlack justify-center items-center w-full lg:w-[70%] py-20">
+                <div class="w-full lg:w-[35%] flex justify-center">
+                    <img src="./assets/Desktop_-_4__3___1_-removebg-preview.png" alt="prototypeMobile">
+                </div>
+                <div class="w-full lg:w-[35%] text-start text-footerBlack">
+                    <p class="text-[12px] lg:text-[14px] py-5">Our AI-powered support assistant is designed to guide users through emotional and complex situations with calm and clarity.<br> <span class="text-[15px] lg:text-[18px] font-semibold">A Friend Who listens, Anytime You Need One</span> </p>
+                    <p class="text-[12px] lg:text-[14px] py-5">Available 24/7, it helps you navigate reporting, offers resources, and connects you to real human help when it matters most.</p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <footer class="w-full bg-footerBlack text-white p-10 lg:flex hidden flex-col items-center justify-center space-y-3">
+        <div class="w-full flex justify-between py-5 px-28">
+            <div class="text-[12px] space-x-4">
+            <a href="./index.html">Home</a>
+            <a href="./ElabChallenges.html">Elab-Challenges</a>
+            </div>
+            <div class="text-[20px] font-semibold cursor-wait">
+            <a href="./index.html"><h1>EduEthics</h1></a>
+            </div>
+            <div class="text-[12px] space-x-4">
+            <a href="./prototype.html">Prototype</a>
+            <a href="./gallery.html">Gallery</a>
+            </div>
+        </div>
+        <div class="w-1/2 space-y-3 flex flex-col justify-center items-center">
+            <div class="flex space-x-4 pl-5 justify-center items-center">
+            <a href=""><img class="w-8 h-8" src="./assets/video.png" alt="youtube"></a>
+            <a href=""><img class="w-8 h-8" src="./assets/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="flex space-x-4 text-[10px]">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Lincense Agreement</a>
+            <a href="#">Charging</a>
+            </div>
+        </div>
+        <h3 class="text-[11px]">@ 2025 Copyright</h3>
+    </footer>
+<script src="./script.js"></script>
+</body>
+</html>

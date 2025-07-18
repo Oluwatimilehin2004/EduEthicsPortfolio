@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduEthics</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="icon" href="./assets/ethics.png" class="bg-white rounded-sm" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-backgroundColor font-[Montserrat] relative snap-y snap-mandatory overflow-scroll">
+<!-- Desktop Screen -->
+  <nav class="w-full border-black h-[10%] lg:flex justify-between hidden py-6 px-28">
+    <div class="text-[12px] space-x-4">
+      <a href="./index.html">Home</a>
+      <a href="./ElabChallenges.html">Elab-Challenges</a>
+    </div>
+    <div class="text-[20px] font-semibold cursor-wait">
+      <h1>EduEthics</h1>
+    </div>
+    <div class="text-[12px] space-x-4">
+      <a href="./prototype.html">Prototype</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="#video"><button class="py-2 px-3 bg-buttonDeepBlack text-white hover:bg-bgBlue hover:transition-transform hover:scale-105 rounded-lg">Contact Us</button></a>
+    </div>
+  </nav>
+  
+  <!-- Mobile Screen -->
+   <nav class="w-full h-[20%] flex p-4 justify-between lg:hidden">
+      <h1 class="text-[14px]">EduEthics</h1>
+      <button id="openMenu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+      </button>
+      
+    <div id="menu" class="lg:hidden hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-backgroundColor p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="font-semibold text-lg">EduEthics</span>
+          </a>
+          <button id="closeBar" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">ELAB</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Prototype</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </nav>
+
+   <section class="w-full text-center pt-10">
+        <h1 class="text-[25px] lg:text-[30px] font-bold text-center">Gallery</h1>
+        <p class="text-[12px] lg:text-[14px] pt-4 text-center">Fun moments together as a team. <br /> From working together on projects, to vibes and chill.</p>
+   </section>
+
+   <!-- Gallery -->
+    <section class="w-full p-5 grid grid-cols-4 gap-2.5" style="
+    grid-template-rows: repeat(8, 200px);
+    grid-template-areas: 
+        'b1 b2 b3 b4'
+        'b1 b2 b5 b8'
+        'b7 b6 b6 b10'
+        'b9 b6 b6 b10'
+        'b11 b12 b13 b14'
+        'b15 b16 b17 b18'
+        'b19 b20 b21 b22'
+        'b23 b24 b25 b26'
+    ">
+        <!-- Row 1 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/one.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b1"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">Chills</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/two.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b2"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">Presentation Day</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/three.JPG')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b3"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">First Team's Challenge</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/four.JPG')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b4"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">The Voice</span></div>
+        
+        <!-- Row 2 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/five.JPG')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b5"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">Kushite Podcast Prep</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/eight.JPG')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b8"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">Met OwnIt CEO</span></div>
+        
+        <!-- Row 3 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/seven.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b7"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">Flexing Beauty</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/team.JPG')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b6"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">Frist Team Picture</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/ten.HEIC')] bg-no-repeat bg-cover bg-center text-white"  style="grid-area: b10"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">9</span></div>
+        
+        <!-- Row 4 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/nine.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b9"><span class="bg-black py-3 px-4 rounded-sm text-white absolute">10</span></div>
+        
+        <!-- Row 5 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/eleven.HEIC')] bg-no-repeat bg-center bg-cover text-white" style="grid-area: b11"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">11</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/tweleve.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b12"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">12</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/13.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b13"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">13</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/14.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b14"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">14</span></div>
+        
+        <!-- Row 6 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/15.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b15"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">15</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/16.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b16"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">16</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/17.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b17"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">17</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/19.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b18"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">18</span></div>
+        
+        <!-- Row 7 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/20.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b19"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">19</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/21.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b20"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">20</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/22.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b21"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">21</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/23.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b22"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">22</span></div>
+        
+        <!-- Row 8 -->
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/24.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b23"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">23</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/25.JPG')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b24"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">24</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/26.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b25"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">25</span></div>
+        <div class="rounded-sm relative hover:scale-110 hover:transition-transform bg-[url('./assets/27.HEIC')] bg-no-repeat bg-cover bg-center text-white" style="grid-area: b26"><span class="bg-black text-white py-2 px-4 rounded-sm absolute">26</span></div>
+    </section>
+
+    <footer class="w-full bg-footerBlack text-white p-10 lg:flex hidden flex-col items-center justify-center space-y-3">
+        <div class="w-full flex justify-between py-5 px-28">
+            <div class="text-[12px] space-x-4">
+            <a href="./index.html">Home</a>
+            <a href="./ElabChallenges.html">Elab-Challenges</a>
+            </div>
+            <div class="text-[20px] font-semibold cursor-wait">
+            <a href="./index.html"><h1>EduEthics</h1></a>
+            </div>
+            <div class="text-[12px] space-x-4">
+            <a href="./prototype.html">Prototype</a>
+            <a href="./gallery.html">Gallery</a>
+            </div>
+        </div>
+        <div class="w-1/2 space-y-3 flex flex-col justify-center items-center">
+            <div class="flex space-x-4 pl-5 justify-center items-center">
+            <a href=""><img class="w-8 h-8" src="./assets/video.png" alt="youtube"></a>
+            <a href=""><img class="w-8 h-8" src="./assets/instagram.png" alt="instagram"></a>
+            </div>
+            <div class="flex space-x-4 text-[10px]">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Lincense Agreement</a>
+            <a href="#">Charging</a>
+            </div>
+        </div>
+        <h3 class="text-[11px]">@ 2025 Copyright</h3>
+    </footer>
+<script src="./script.js"></script>
+</body>
+</html>
